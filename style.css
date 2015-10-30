@@ -1,73 +1,121 @@
-@import url(http://fonts.googleapis.com/css?family=Righteous);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
-html, body, .container{ height: 100%; margin: 0; padding: 0; }
-
-body{
-background:url(http://betheme.muffingroupsc.netdna-cdn.com/be/launch/wp-content/uploads/2014/12/home_launch_bg.jpg);
- background-attachment: fixed;
-  background-position: center;
-background-clip: border-box;
-background-repeat: no-repeat;
-  min-width: 320px;
-	overflow: hidden;
-  font-family: Muli;
-	font-size: 11px;
-	line-height: 14px;
-	text-transform: uppercase;
-	color: #111;
-  
-
-}
-a{
-	color: #FF4081;
-}
-a:hover{
-	color: #000;
+::-moz-selection {
+    background: rgba(152, 135, 224, 0.88);
+    color: #fff;
 }
 
-.myn{
-	height: 78px;
-	padding: 0px 30px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin: -39px 0 0 -200px;
-  font-size:4em;
-  text-algin:center;
-  font-family: Righteous;
-text-shadow: 1px 2px 1px #ccc, 0px 2px 5px #222;
-  color:#e74c3c;
-	
-}
-.myn:before{
-	content: '';
-	position: fixed;
-	left: 30px;
-	right: 30px;
-	height: 2px;
-	background: rgba(112, 210, 210, 10.4);
-	top: 50%;
-  box-shadow:2px 2px 2px #111;
- 
+::selection {
+    background: rgba(152, 135, 224, 0.88);
+    color: #fff;
 }
 
-.about{
-  letter-spacing: 2px;
-  position: fixed;
-  left:345px;
-	top: 55%;
-font-size:1.3em;
- color:#16a085;
- text-shadow:1px 1px 1px #111;
- font-family: Muli;
- text-align:center;
+html {
+    height: 100%;
 }
-.ffot{
-	position: absolute;
-	width: 100%;
-	bottom: 5px;
-	text-align: center;
-  font-size:1.1em;
-  color:#448AFF;
-  text-shadow:1px 1px 1px #111;
+
+body, p, 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
 }
+
+body {
+    background: hsl(0, 0%, 96%);   
+    background-image: -webkit-radial-gradient(top, circle cover, hsl(0, 0%, 100%), hsl(0, 0%, 94%));
+    background-image: -moz-radial-gradient(top, circle cover, hsl(0, 0%, 100%), hsl(0, 0%, 94%));
+    background-image: radial-gradient(top, circle cover, hsl(0, 0%, 100%), hsl(0, 0%, 94%));
+    background-attachment: fixed;
+    font-family: lato, sans-serif;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+    #profile::before {
+        display: block;
+        height: 144px;
+        border-radius: 4px 4px 0 0;
+        background: #9591ce;
+        -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02);
+        box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02);
+        content: '';
+    }
+
+    #profile {
+        margin: 40px auto;
+        padding-bottom: 38px;
+        max-width: 304px;
+        border-bottom: 4px solid rgba(0, 0, 0, 0.07);
+        border-radius: 4px;
+        background: #fff;
+        text-align: center;
+    }
+
+        #profile > img {
+            position: relative;
+            top: -52px;
+            display: block;
+            margin: auto;
+            width: 96px;
+            height: 96px;
+            border: 4px solid white;
+            border-radius: 96px;
+            -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02);
+            box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02);
+        }
+        
+        
+        #profile h2, #profile p {
+            -webkit-user-select: text;
+            -moz-user-select: text;
+            -ms-user-select: text;
+        }
+
+        #profile h2 {
+            margin-top: -20px;
+            padding: 0 38px 16px 38px;
+            color: #77767e;
+            font-size: 1.8em;
+        }
+
+        #profile p {
+            padding: 0 38px;
+            color: #9998a0;
+            font-size: 1.04em;
+            line-height: 1.44em;
+        }
+
+        #profile .btn {
+            display: inline-block;
+            margin: 40px 38px 0 38px;
+            padding: 14px 36px;
+            border-bottom: 2px solid #7772af;
+            border-radius: 2px;
+            background: #8783c6;
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 80ms, outline 100ms;
+        }
+
+/*
+            #profile .btn:focus {
+                outline: 4px dashed rgba(0, 0, 0, 0.14);
+                outline-offset: 2px;
+            }
+*/
+
+            #profile .btn:hover {
+                background: #9591ce;
+            }
+
+            #profile .btn:active {
+                border-top: 2px solid #6c679d;
+                border-bottom: none;
+                background: #7370ac;
+                -webkit-box-shadow: inset 0 -2px 0 #6c679d;
+                box-shadow: inset 0 -2px 0 #6c679d;
+            }
