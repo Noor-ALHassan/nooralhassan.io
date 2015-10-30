@@ -20,16 +20,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-     background-image: linear-gradient(45deg, 
-    @stripe1, @stripe1 2px, 
-    @stripe2 2px, @stripe2 4px, 
-    @stripe1 4px, @stripe1 9px, 
-    @stripe2 9px, @stripe2 11px, 
-    @stripe1 11px, @stripe1 16px, 
-    @stripe2 16px, @stripe2 18px, 
-    @stripe1 18px, @stripe1 22px);
-  background-size: 10px 20px;
-}
+  background: hsl(0, 0%, 96%);   
+    background-image: -webkit-radial-gradient(top, circle cover, hsl(0, 0%, 100%), hsl(0, 0%, 94%));
+    background-image: -moz-radial-gradient(top, circle cover, hsl(0, 0%, 100%), hsl(0, 0%, 94%));
+    background-image: radial-gradient(top, circle cover, hsl(0, 0%, 100%), hsl(0, 0%, 94%));
+    background-attachment: fixed;
     font-family: lato, sans-serif;
 
     -webkit-font-smoothing: antialiased;
