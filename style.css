@@ -44,7 +44,7 @@ div.poloroid:hover
 {
 	background: url("https://pbs.twimg.com/profile_images/626013864434384896/WJj53MBZ.jpg");
   background-size: 280px;
-  background-position: -56px 0px;
+    background-size: contain;
   height: 214px;
   width: 175px;
   cursor: pointer;
