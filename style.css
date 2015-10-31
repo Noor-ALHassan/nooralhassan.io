@@ -39,7 +39,7 @@
 .shadow {
   -webkit-transform: translate(10px, 10px);
   -ms-transform: translate(10px, 10px);
-  transform: translate(10px, 10px);
+  transform: translate(2px, 10px);
 }
 
 .anim-shape--shadow {
